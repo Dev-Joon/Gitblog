@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: dev-joon/Gitblog
+  branch: main
+
+media_folder: "src/assets/images/posts"
+public_folder: "/src/assets/images/posts"
+
+collections:
+  - name: "blog"
+    label: "포스팅 관리"
+    folder: "src/contents/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "제목", name: "title", widget: "string" }
+      - { label: "작성일", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "설명(SEO용)", name: "description", widget: "text" }
+      - { label: "포커스 키워드(SEO)", name: "focus_keyword", widget: "string", required: false }
+      - { label: "작성자", name: "author", widget: "hidden", default: "Joon" }
+      - { label: "썸네일", name: "thumbnail", widget: "image", required: false }
+      - { label: "카테고리(대)", name: "parentCategory", widget: "string" }
+      - { label: "카테고리(소)", name: "childCategory", widget: "string", required: false }
+      - { label: "본문", name: "body", widget: "markdown" }
