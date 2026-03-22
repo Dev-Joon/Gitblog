@@ -1,0 +1,25 @@
+---
+title: "리액트 마스터하기"
+date: "2026-03-22"
+description: "리액트의 기초부터 심화까지 한 번에 정리하는 포스팅입니다."
+thumbnail: ""
+---
+
+# 안녕하세요! 리액트트 공부 시작입니다.
+
+여기는 본문 내용입니다. **굵은 글씨**나 *기울임*도 잘 나오는지 확인해보세요.
+
+## 코드 블록 테스트
+현재 하이라이팅 기능이 들어가지 않았지만, 아래처럼 코드를 적을 수 있습니다.
+
+```javascript
+import { View, Text } from 'react-native'
+import React from 'react'
+
+export default function s() {
+  return (
+    <View>
+      <Text>s</Text>
+    </View>
+  )
+}
